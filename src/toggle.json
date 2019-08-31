@@ -1,0 +1,10 @@
+{
+  "Group 1": {
+    "Feature 1": true,
+    "Feature 2": false
+  },
+  "Group 2": {
+    "Feature 3": true,
+    "Feature 4": false
+  }
+}
