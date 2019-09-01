@@ -1,10 +1,28 @@
-{
-  "Group 1": {
-    "Feature 1": true,
-    "Feature 2": false
+[
+  {
+    "groupId": "Group One",
+    "features": [
+      {
+        "id": "Feature One",
+        "enabled": true
+      },
+      {
+        "id": "Feature Two",
+        "enabled": false
+      }
+    ]
   },
-  "Group 2": {
-    "Feature 3": true,
-    "Feature 4": false
+  {
+    "groupId": "Group Two",
+    "features": [
+      {
+        "id": "Feature Three",
+        "enabled": true
+      },
+      {
+        "id": "Feature Four",
+        "enabled": false
+      }
+    ]
   }
-}
+]
