@@ -1,14 +1,40 @@
 import React, { Component } from "react";
-import Toggle from "./common/toggle";
-import { Segment } from "semantic-ui-react";
-import ToggleSegment from "./common/toggleSegment";
+import ToggleSegmentsGroup from "./common/toggleSegmentsGroup";
 
 class TogglePage extends Component {
   render() {
+    const data = [
+      {
+        groupId: "Group One",
+        features: [
+          {
+            id: "Feature One",
+            enabled: true
+          },
+          {
+            id: "Feature Two",
+            enabled: false
+          }
+        ]
+      },
+      {
+        groupId: "Group Two",
+        features: [
+          {
+            id: "Feature Three",
+            enabled: true
+          },
+          {
+            id: "Feature Four",
+            enabled: false
+          }
+        ]
+      }
+    ];
     return (
-      <div>
+      <div className="container">
         <h1>Feature Toggle Configuration</h1>
-        <ToggleSegment />
+        <ToggleSegmentsGroup items={data} />
       </div>
     );
   }
